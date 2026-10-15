@@ -44,7 +44,7 @@
                         <b>When:</b> Wednesday, 10:00a.m.<br>
                         <b>Where:</b> MC5501<br>
                         <b>Goal:</b> Build an understanding of quantum computing, quantum key distribution (QKD) and security proofs in the quantum random oracle model (QROM).<br>
-                        &gt;&gt; <a href="files/RG_Fall26.pdf">Notes</a> (<i>Last updated on Sept 29, 2026</i>)
+                        &gt;&gt; <a href="files/RG_Fall26.pdf">Notes</a> (<i>Last updated on Oct 15, 2026</i>)
                         </p>
                       <!--<div class="center"><a href="cv.pdf" class="button"><i class="material-icons left">file_download</i> PDF</a></div>-->
                     </div>
@@ -65,40 +65,32 @@
                       <ol>
                         <li><b>Introduction to Quantum Computing (Maher Mamah, Bruno Sterner - 23/09/2026)</b>
                             <ul>
+                                For the first week, we start with a motivation on quantum computing including the basic definitions and discussion on complexity classes. This will serve as a elementary foundation for the rest of the reading group.
                                 <li>
-                                    - Qubits, measurement, and the difference between classical and quantum information.<br>
-                                    - Superposition, tensor products, and entanglement.<br>
-                                    - Examples of quantum computation.<br>
                                     - References: [10], [12] and [14].<br>
                                 </li>
                             </ul>
                         </li>
                         <li><b>Quantum Information Theory (Elnaz Hessami Pilehrood, Owen Waldron - 30/09/2026)</b>
                             <ul>
+                                Pure quantum states describe systems whose preparation is known exactly, but realistic quantum information often involves uncertainty, inaccessible subsystems, and interactions with the environment. In this talk, we introduce density operators as a general framework encompassing both pure and mixed states. We then discuss quantum channels, which model physical transformations and common forms of noise affecting quantum systems. Finally, we introduce classical and quantum entropy as measures of uncertainty and information, and explain how these ideas provide basic intuition for quantum cryptographic security.
                                 <li>
-                                    - Quantum states, density operators, and mixed states.<br>
-                                    - Quantum channels and the effect of noise.<br>
-                                    - Entropy, information, and basic security intuition.<br>
                                     - References: [10], [12] and [14].<br>
                                 </li>
                             </ul>
                         </li>
                         <li><b>Quantum Circuits (Mojtaba Fadavi, Taha Hedayat - 07/10/2026)</b>
                             <ul>
+                                    Equipped with the knowledge of quantum information, we present how to use quantum states to build a quantum algorithm. While classical circuits represent how one makes algorithms using the bits 0 and 1, quantum circuits represent how one makes algorithms using qubits \(\ket{\alpha} = \alpha_0 \ket{0} + \alpha_1\ket{1}\). In this presentation, we will introduce the definition and presentation of quantum gates. Starting with 1-qubit gates and expanding to n-qubit gates. We also present the standard gates such as the Pauli Gates, CNOT, CCNOT, SWAP, etc. Then we proceed to see the effects and interactions of these gates along with some measurements.
                                 <li>
-                                    - Single-qubit gates and controlled operations.<br>
-                                    - Circuit notation, measurement, and common circuit identities.<br>
-                                    - Bell-state preparation as a worked example.<br>
                                     - References: [10], [12] and [14].<br>
                                 </li>
                             </ul>
                         </li>
-                        <li><b>Quantum Key Distribution (Maggie Simmons - 21/10/2026)</b>
+                        <li><b>Quantum Key Distribution (Masuda Fatima, Maggie Simmons - 21/10/2026)</b>
                             <ul>
+                                Quantum Key Distribution (QKD) uses the laws of Quantum Mechanics to allow two parties to produce a shared secret key only known to them without it's security relying on the computational hardness. In this presentation, we will introduce the QKD protocol BB84, and present how it is secure against various attacks. We will also discuss two major phases in BB84: the information reconciliation phase between keys of sender and receiver via error correcting codes and the privacy amplification phase where two communicating parties distill highly secret shared key from a larger body of a shared key, which is only partially secret. Finally, we will give a brief overview of Muckle-based hybrid authenticated key exchange (AKE) protocols.
                                 <li>
-                                    - BB84: preparation, transmission, measurement, and basis sifting.<br>
-                                    - Error estimation, reconciliation, and privacy amplification.<br>
-                                    - How QKD keys can enter a hybrid authenticated key exchange.<br>
                                     - References: [2], [6], [4] and [11].<br>
                                 </li>
                             </ul>
