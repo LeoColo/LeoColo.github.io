@@ -21,5 +21,5 @@ if (pathname !== 'soutenance.html'){
 // Get the element
 var elementupdate = document.getElementById('last-update')
 // Set the inner text
-elementupdate.innerText = 'Updated on March 10, 2026'
+elementupdate.innerText = 'Updated on October 15, 2026'
 }
