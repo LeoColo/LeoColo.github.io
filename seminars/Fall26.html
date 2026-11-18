@@ -44,7 +44,7 @@
                         <b>When:</b> Wednesday, 10:00a.m.<br>
                         <b>Where:</b> MC5501<br>
                         <b>Goal:</b> Build an understanding of quantum computing, quantum key distribution (QKD) and security proofs in the quantum random oracle model (QROM).<br>
-                        &gt;&gt; <a href="files/RG_Fall26.pdf">Notes</a> (<i>Last updated on Oct 15, 2026</i>)
+                        &gt;&gt; <a href="files/RG_Fall26.pdf">Notes</a> (<i>Last updated on Nov 18, 2026</i>)
                         </p>
                       <!--<div class="center"><a href="cv.pdf" class="button"><i class="material-icons left">file_download</i> PDF</a></div>-->
                     </div>
@@ -103,34 +103,29 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><b>Challenges in Deploying QKD (Aodhan Corrigan - 4/11/2026)</b>
+                        <li><b>How to realize a QKD protocol? Imperfections and considerations in security proofs (Aodhan Corrigan - 4/11/2026)</b>
                             <ul>
-                                <li>
-                                    - Invited talk.<br>
-                                </li>
+                                Quantum key distribution (QKD) protocols rely on the laws of physics for provably secure secret sharing, but the laws of physics are notoriously tricky to harness. If the laser being used for encoding is fluctuating in time, how does this affect the security guarantees? In this talk, I will cover the kinds of problems that can arise in physical realizations of QKD protocols and the problems that these might cause. After this, I will give a (far from exhaustive) overview of techniques that come up in dealing with such imperfections in the implementation. This will be open-ended, in the sense that questions that arise/different interests during the talk can dictate what we cover.
                             </ul>
                         </li>
-                        <li><b>The Random Oracle Model and Classical Security Proofs (Huanhuan Chen, Bruce Xu - 11/11/2026)</b>
+                        <li><b>Classical Security Proofs, Game Hopping and the Random Oracle Model (Huanhuan Chen, Bruce Xu - 11/11/2026)</b>
                             <ul>
+                                This talk introduces fundamental techniques for proving security in classical cryptography, with an emphasis on game hopping and the random oracle model. We will discuss how security arguments are structured as sequences of games and how the random oracle model simplifies the analysis of cryptographic constructions. As a first example, we will examine how a random oracle can be used to construct a secure pseudorandom function (PRF) and subsequently a message authentication code (MAC). As a second example, we will explore the role of the random oracle in the Fujisaki–Okamoto transformation and its security proof.
                                 <li>
-                                    - Ideal hash functions and oracle access in the classical random-oracle model.<br>
-                                    - Security games, reductions, and game-hopping proofs.<br>
-                                    - Programming an oracle and tracking an adversary's queries.<br>
                                     - References: [9].<br>
                                 </li>
                             </ul>
                         </li>
-                        <li><b>Definitions for the Quantum Random Oracle Model (Jonas Janneck, Camryn Steckel - 18/11/2026)</b>
+                        <li><b>The Quantum-Accessible Random Oracle Model (Jonas Janneck, Camryn Steckel - 18/11/2026)</b>
                             <ul>
+                                A lot of classical constructions are proven secure the random oracle model. With quantum adversaries, it is necessary to consider a quantum-accessible model allowing the adversary to query the oracle with quantum states.
+                                In this talk, we define such an oracle and show its implications on classical security proofs. We will present an example separating the classical and quantum-accessible random oracle models using a scheme that is secure when the adversary is given classical access to the random oracle, but is insecure when they can make quantum oracle queries. We further define history-free reductions and show that there is a general lifting result allowing to argue security in the quantum random oracle model when there is a reduction in the classical setting. As an example for this technique we will show how to prove the security of signatures following the Full Domain Hash paradigm.
                                 <li>
-                                    - Quantum superposition queries to a random oracle.<br>
-                                    - How quantum access changes classical proof techniques.<br>
-                                    - Oracle unitaries and the basic QROM security setting.<br>
                                     - References: [3].<br>
                                 </li>
                             </ul>
                         </li>
-                        <li><b>QROM Lemmas (Speaker - 25/11/2026)</b>
+                        <li><b>QROM Lemmas (Arkaprava Choudhury, Jonas Janneck - 25/11/2026)</b>
                             <ul>
                                 <li>
                                     - Why measuring or reprogramming quantum queries needs new bounds.<br> 
@@ -140,7 +135,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><b>An Example Security Proof in the QROM (Seunghoon Lee - 2/12/2026)</b>
+                        <li><b>An Example Security Proof in the QROM (Seunghoon Lee, Nic Swanson - 2/12/2026)</b>
                             <ul>
                                 <li>
                                     - Fiat-Shamir signatures as a worked QROM proof.<br>
